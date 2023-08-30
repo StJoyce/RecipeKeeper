@@ -1,13 +1,15 @@
 package data
 
-type Receipe struct{
-Id string
-RecipeName string
-Source string
-PrepTime string
-CookTime string
-ServingSize int
-Ingredients map[string]string
-Instructions []string
-Tags []string
+type Recipe struct{
+Id string `json:"Id"`
+RecipeName string `"json:'Recepe Name"`
+Source string `json:"Source"`
+PrepTime string `json:"Presentation Time"`
+CookTime string `json:"Cook Time"`
+ServingSize int `json:"Serving Size"`
+Ingredients map[string]string `json:"Ingredients"`
+Instructions []string `json:"Directions"`
+Tags []string `json:"Tags"`
 } 
+
+var AllRecipes []Recipe
